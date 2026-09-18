@@ -1,5 +1,4 @@
-<!<!DOCTYPE html>
-<html <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -118,1024 +117,1212 @@ header{
 .hero{
  min-height:680px;
  background:
- linear-gradient(90deg,rgba(0,0,0,.55),rgba(0,0
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>YOU DECIDE — Furniture & Interiors</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-
-:root{
---black:#171614;
---cream:#f3eee7;
---beige:#d8cbbd;
---white:#fff;
---gray:#77716a;
---line:#e5dfd7;
-}
-
-body{
-font-family:'DM Sans',Arial,sans-serif;
-color:var(--black);
-background:#faf9f7;
-}
-
-a{text-decoration:none;color:inherit}
-button{font-family:inherit;cursor:pointer}
-
-header{
-height:82px;
-background:#fff;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:0 5%;
-position:sticky;
-top:0;
-z-index:100;
-border-bottom:1px solid var(--line);
-}
-
-.logo{
-font-size:23px;
-font-weight:600;
-letter-spacing:6px;
-}
-
-nav{
-display:flex;
-gap:35px;
-font-size:13px;
-}
-
-nav a:hover{opacity:.5}
-
-.header-right{
-display:flex;
-align-items:center;
-gap:20px;
-}
-
-.cart{
-border:0;
-background:var(--black);
-color:white;
-padding:12px 20px;
-border-radius:2px;
-font-size:12px;
-}
-
-.hero{
-height:calc(100vh - 82px);
-min-height:620px;
-position:relative;
-display:flex;
-align-items:center;
-overflow:hidden;
-background:
-linear-gradient(90deg,rgba(0,0,0,.57),rgba(0,0,0,.12)),
-url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=90");
-background-size:cover;
-background-position:center;
-color:#fff;
+ linear-gradient(90deg,rgba(0,0,0,.55),rgba(0,0,0,.05)),
+ url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=90")
+ center/cover;
+ display:flex;
+ align-items:center;
+ color:white;
 }
 
 .hero-content{
-width:90%;
-max-width:1250px;
-margin:auto;
+ max-width:720px;
+ padding:100px 24px;
 }
 
-.small{
-font-size:11px;
-letter-spacing:4px;
-text-transform:uppercase;
-margin-bottom:25px;
+.eyebrow{
+ font-size:11px;
+ font-weight:700;
+ letter-spacing:.2em;
+ text-transform:uppercase;
 }
 
 .hero h1{
-font-family:'Playfair Display',serif;
-font-size:clamp(55px,8vw,105px);
-font-weight:400;
-line-height:.98;
-max-width:850px;
+ font:500 clamp(50px,7vw,88px)/.94 "Playfair Display";
+ margin:18px 0;
 }
 
 .hero p{
-font-size:17px;
-max-width:530px;
-line-height:1.7;
-margin:28px 0;
-color:#eee;
+ max-width:550px;
+ line-height:1.8;
+ color:#eee;
+ font-size:15px;
+ margin-bottom:30px;
 }
 
 .btn{
-display:inline-block;
-background:#fff;
-color:#171614;
-padding:16px 29px;
-font-size:12px;
-letter-spacing:1px;
-text-transform:uppercase;
-border:0;
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ padding:14px 23px;
+ background:var(--black);
+ color:white;
+ border:1px solid var(--black);
+ font-size:11px;
+ font-weight:700;
+ letter-spacing:.1em;
+ text-transform:uppercase;
+ transition:.2s;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn.white{
+ background:white;
+ border-color:white;
+ color:var(--black);
+}
+.btn.outline{
+ background:transparent;
+ color:var(--black);
+}
+.btn.outline:hover{
+ background:var(--black);
+ color:white;
 }
 
-.btn.dark{
-background:var(--black);
-color:white;
-}
-
-.intro{
-padding:110px 7%;
-text-align:center;
-background:#fff;
-}
-
-.intro .small{color:#8b8279}
-
-.intro h2{
-font-family:'Playfair Display',serif;
-font-weight:400;
-font-size:clamp(38px,5vw,65px);
-max-width:900px;
-margin:0 auto 25px;
-}
-
-.intro p{
-max-width:650px;
-margin:auto;
-color:var(--gray);
-line-height:1.8;
-}
+/* SECTIONS */
 
 .section{
-padding:100px 6%;
+ padding:90px 0;
 }
 
-.section-head{
-display:flex;
-justify-content:space-between;
-align-items:end;
-margin-bottom:40px;
+.sectionhead{
+ display:flex;
+ justify-content:space-between;
+ align-items:end;
+ gap:30px;
+ margin-bottom:35px;
 }
 
-.section-head h2{
-font-family:'Playfair Display',serif;
-font-size:48px;
-font-weight:400;
+.section h2{
+ font:500 clamp(36px,5vw,55px) "Playfair Display";
+ margin:7px 0;
 }
 
-.section-head p{
-color:var(--gray);
-font-size:13px;
-max-width:300px;
+.sectionintro{
+ color:var(--gray);
+ line-height:1.7;
+ max-width:500px;
+ font-size:14px;
 }
+
+/* CATEGORIES */
 
 .categories{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:14px;
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:14px;
 }
 
 .category{
-height:470px;
-position:relative;
-overflow:hidden;
-background:#ddd;
+ position:relative;
+ aspect-ratio:1/1.18;
+ overflow:hidden;
+ color:white;
 }
 
 .category img{
-width:100%;
-height:100%;
-object-fit:cover;
-transition:transform .7s;
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ transition:.5s;
 }
 
 .category:hover img{transform:scale(1.05)}
 
 .category:after{
-content:"";
-position:absolute;
-inset:0;
-background:linear-gradient(transparent 45%,rgba(0,0,0,.65));
+ content:"";
+ position:absolute;
+ inset:0;
+ background:linear-gradient(transparent 45%,rgba(0,0,0,.65));
 }
 
-.category-info{
-position:absolute;
-z-index:2;
-bottom:28px;
-left:28px;
-color:#fff;
+.categorytext{
+ position:absolute;
+ left:22px;
+ bottom:20px;
+ z-index:2;
 }
 
-.category-info h3{
-font-family:'Playfair Display',serif;
-font-size:32px;
-font-weight:400;
+.categorytext strong{
+ display:block;
+ font:500 27px "Playfair Display";
 }
 
-.category-info span{
-font-size:11px;
-letter-spacing:2px;
-text-transform:uppercase;
+.categorytext span{
+ font-size:11px;
+ opacity:.85;
 }
+
+/* FILTER */
+
+.filters{
+ display:flex;
+ flex-wrap:wrap;
+ gap:7px;
+}
+
+.filter{
+ background:transparent;
+ border:1px solid var(--line);
+ padding:9px 15px;
+ font-size:11px;
+}
+
+.filter.active,
+.filter:hover{
+ background:var(--black);
+ color:white;
+ border-color:var(--black);
+}
+
+/* PRODUCTS */
 
 .products{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:28px;
-}
-
-.product{
-background:#fff;
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:23px;
 }
 
 .product-image{
-height:380px;
-overflow:hidden;
-position:relative;
-background:#eee;
+ position:relative;
+ aspect-ratio:1/1.12;
+ overflow:hidden;
+ background:#e5e1d9;
 }
 
 .product-image img{
-width:100%;
-height:100%;
-object-fit:cover;
-transition:transform .6s;
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ transition:.45s;
 }
 
-.product:hover img{transform:scale(1.04)}
+.product:hover .product-image img{
+ transform:scale(1.035);
+}
 
-.tag{
-position:absolute;
-top:14px;
-left:14px;
-background:#fff;
-padding:7px 11px;
-font-size:9px;
-letter-spacing:1px;
-z-index:2;
+.badge{
+ position:absolute;
+ top:12px;
+ left:12px;
+ background:white;
+ padding:7px 9px;
+ font-size:9px;
+ font-weight:700;
+ letter-spacing:.1em;
 }
 
 .product-info{
-padding:19px 4px 25px;
+ padding:14px 0;
 }
 
 .product-info h3{
-font-size:15px;
-font-weight:500;
+ font-size:14px;
+ margin:0 0 6px;
 }
 
-.product-info .cat{
-font-size:11px;
-color:#999;
-margin-top:4px;
-}
-
-.product-bottom{
-display:flex;
-align-items:center;
-justify-content:space-between;
-margin-top:14px;
+.product-desc{
+ color:var(--gray);
+ font-size:11px;
 }
 
 .price{
-font-size:14px;
-font-weight:600;
+ margin-top:8px;
+ font-size:14px;
+ font-weight:700;
 }
 
 .add{
-border:1px solid #d8d2ca;
-background:white;
-padding:9px 13px;
-font-size:10px;
-letter-spacing:1px;
+ width:100%;
+ margin-top:12px;
+ padding:12px;
+ background:var(--black);
+ color:white;
+ border:0;
+ font-size:10px;
+ font-weight:700;
+ letter-spacing:.1em;
+ text-transform:uppercase;
 }
 
-.add:hover{
-background:var(--black);
-color:white;
-}
+/* EDITORIAL */
 
 .editorial{
-display:grid;
-grid-template-columns:1.1fr .9fr;
-min-height:650px;
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ background:#e7e1d7;
 }
 
-.editorial-image{
-background:url("https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1400&q=90") center/cover;
+.editorial img{
+ width:100%;
+ height:100%;
+ min-height:520px;
+ object-fit:cover;
 }
 
-.editorial-content{
-background:var(--cream);
-display:flex;
-align-items:center;
-padding:12%;
+.editorialcontent{
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ padding:70px;
 }
 
-.editorial-content h2{
-font-family:'Playfair Display',serif;
-font-size:60px;
-font-weight:400;
-line-height:1.05;
-margin:15px 0 25px;
+.editorialcontent h2{
+ font:500 52px/1.05 "Playfair Display";
+ margin:15px 0;
 }
 
-.editorial-content p{
-color:var(--gray);
-line-height:1.8;
-margin-bottom:28px;
+.editorialcontent p{
+ max-width:500px;
+ color:var(--gray);
+ line-height:1.8;
+ font-size:14px;
+ margin-bottom:28px;
 }
+
+/* CUSTOM */
 
 .custom{
-padding:120px 8%;
-background:var(--black);
-color:white;
-text-align:center;
+ background:var(--black);
+ color:white;
+ text-align:center;
+ padding:105px 20px;
 }
 
 .custom h2{
-font-family:'Playfair Display',serif;
-font-size:clamp(48px,6vw,80px);
-font-weight:400;
+ font:500 clamp(40px,6vw,66px) "Playfair Display";
+ margin:14px 0;
 }
 
 .custom p{
-max-width:600px;
-margin:25px auto 35px;
-color:#bbb;
-line-height:1.8;
+ max-width:620px;
+ margin:0 auto 30px;
+ color:#c5c1ba;
+ line-height:1.8;
 }
 
+/* BENEFITS */
+
+.benefits{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ border-top:1px solid var(--line);
+ border-bottom:1px solid var(--line);
+}
+
+.benefit{
+ text-align:center;
+ padding:30px 18px;
+ border-right:1px solid var(--line);
+}
+
+.benefit:last-child{border-right:0}
+
+.benefit strong{
+ display:block;
+ font-size:11px;
+ letter-spacing:.1em;
+ text-transform:uppercase;
+}
+
+.benefit span{
+ display:block;
+ color:var(--gray);
+ font-size:11px;
+ line-height:1.6;
+ margin-top:7px;
+}
+
+/* NEWSLETTER */
+
 .newsletter{
-padding:90px 20px;
-background:#e8dfd4;
-text-align:center;
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:50px;
+ align-items:center;
 }
 
 .newsletter h2{
-font-family:'Playfair Display',serif;
-font-size:50px;
-font-weight:400;
-margin-bottom:12px;
+ font:500 43px "Playfair Display";
+ margin:8px 0;
 }
 
-.newsletter p{
-color:#777;
-margin-bottom:25px;
+.emailform{
+ display:flex;
+ border-bottom:1px solid var(--black);
+ padding-bottom:8px;
 }
 
-.form{
-display:flex;
-max-width:470px;
-margin:auto;
+.emailform input{
+ flex:1;
+ background:transparent;
+ border:0;
+ outline:0;
+ padding:8px 0;
 }
 
-.form input{
-flex:1;
-border:1px solid #ccc;
-padding:15px;
-background:white;
-outline:none;
+.emailform button{
+ border:0;
+ background:none;
+ font-weight:700;
 }
 
-.form button{
-background:#171614;
-color:#fff;
-border:0;
-padding:15px 22px;
-}
+/* FOOTER */
 
 footer{
-background:#111;
-color:#fff;
-padding:65px 6% 25px;
+ background:var(--black);
+ color:white;
+ padding:60px 0 25px;
 }
 
-.footer-grid{
-display:grid;
-grid-template-columns:2fr 1fr 1fr 1fr;
-gap:40px;
-padding-bottom:55px;
+.footergrid{
+ display:grid;
+ grid-template-columns:1.5fr 1fr 1fr 1fr;
+ gap:30px;
 }
 
-.footer-logo{
-font-size:22px;
-letter-spacing:5px;
-margin-bottom:17px;
-}
-
-footer p,footer a{
-color:#999;
-font-size:12px;
-line-height:2;
+.footerlogo{
+ font:500 32px "Playfair Display";
+ margin-bottom:10px;
 }
 
 footer h4{
-font-size:11px;
-letter-spacing:2px;
-margin-bottom:15px;
+ font-size:10px;
+ letter-spacing:.15em;
+ text-transform:uppercase;
 }
 
+footer p,
 footer a{
-display:block;
+ color:#aaa;
+ font-size:12px;
+ line-height:1.9;
 }
 
-.copy{
-border-top:1px solid #333;
-padding-top:20px;
-font-size:10px;
-color:#666;
+.copyright{
+ border-top:1px solid #333;
+ margin-top:40px;
+ padding-top:18px;
+ color:#777;
+ font-size:10px;
 }
 
 /* CART */
 
 .overlay{
-display:none;
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.6);
-z-index:500;
+ position:fixed;
+ inset:0;
+ background:rgba(0,0,0,.5);
+ z-index:100;
+ visibility:hidden;
+ opacity:0;
+ transition:.25s;
 }
 
-.cart-panel{
-position:absolute;
-right:0;
-top:0;
-width:min(470px,100%);
-height:100%;
-background:#fff;
-padding:30px;
-overflow:auto;
+.overlay.open{
+ visibility:visible;
+ opacity:1;
 }
 
-.cart-top{
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:1px solid var(--line);
-padding-bottom:20px;
+.cartpanel{
+ position:absolute;
+ right:0;
+ top:0;
+ width:min(450px,100%);
+ height:100%;
+ background:var(--cream);
+ padding:28px;
+ transform:translateX(100%);
+ transition:.3s;
+ display:flex;
+ flex-direction:column;
 }
 
-.cart-top h2{
-font-family:'Playfair Display',serif;
-font-size:34px;
-font-weight:400;
+.overlay.open .cartpanel{
+ transform:none;
+}
+
+.carthead{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ border-bottom:1px solid var(--line);
+ padding-bottom:18px;
+}
+
+.carthead h3{
+ font:500 29px "Playfair Display";
+ margin:0;
 }
 
 .close{
-background:none;
-border:0;
-font-size:28px;
+ border:0;
+ background:none;
+ font-size:27px;
 }
 
-.cart-item{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 0;
-border-bottom:1px solid #eee;
+.cartitems{
+ flex:1;
+ overflow:auto;
 }
 
-.cart-name{
-font-size:14px;
-font-weight:600;
+.cartitem{
+ display:grid;
+ grid-template-columns:75px 1fr auto;
+ gap:12px;
+ padding:16px 0;
+ border-bottom:1px solid var(--line);
 }
 
-.cart-price{
-font-size:12px;
-color:#888;
-margin-top:5px;
+.cartitem img{
+ width:75px;
+ height:80px;
+ object-fit:cover;
+}
+
+.cartitem h4{
+ font-size:13px;
+ margin:4px 0 7px;
+}
+
+.cartitem p{
+ font-size:12px;
+ color:var(--gray);
+ margin:0;
 }
 
 .qty{
-display:flex;
-align-items:center;
-gap:10px;
+ display:flex;
+ align-items:center;
+ gap:8px;
+ margin-top:9px;
 }
 
 .qty button{
-width:28px;
-height:28px;
-border:1px solid #ddd;
-background:#fff;
+ width:25px;
+ height:25px;
+ border:0;
+ background:#e4dfd6;
+}
+
+.remove{
+ border:0;
+ background:none;
+ color:#999;
+ font-size:10px;
+}
+
+.summary{
+ border-top:1px solid var(--line);
+ padding-top:17px;
+}
+
+.summaryrow{
+ display:flex;
+ justify-content:space-between;
+ font-size:13px;
+ margin:9px 0;
 }
 
 .total{
-display:flex;
-justify-content:space-between;
-font-size:19px;
-font-weight:600;
-padding:28px 0;
+ font-size:18px;
+ font-weight:700;
 }
 
-.order{
-width:100%;
-background:#171614;
-color:white;
-border:0;
-padding:17px;
-font-size:12px;
-letter-spacing:1px;
-text-transform:uppercase;
+.full{
+ width:100%;
+ margin-top:13px;
+}
+
+/* CHECKOUT */
+
+.checkoutbox{
+ display:none;
+ margin-top:20px;
+ border-top:1px solid var(--line);
+ padding-top:20px;
+}
+
+.checkoutbox.show{
+ display:block;
+}
+
+.checkoutbox h4{
+ font:500 25px "Playfair Display";
+ margin:0 0 15px;
+}
+
+.field{
+ width:100%;
+ padding:12px;
+ margin-bottom:10px;
+ border:1px solid var(--line);
+ background:white;
+ outline:none;
+}
+
+textarea.field{
+ min-height:85px;
+ resize:vertical;
 }
 
 .empty{
-text-align:center;
-color:#999;
-padding:60px 0;
+ text-align:center;
+ padding:60px 10px;
+ color:var(--gray);
+ font-size:13px;
 }
 
-@media(max-width:1000px){
+/* TOAST */
 
-nav{display:none}
-
-.categories,.products{
-grid-template-columns:repeat(2,1fr);
+.toast{
+ position:fixed;
+ bottom:25px;
+ left:50%;
+ transform:translate(-50%,20px);
+ background:var(--black);
+ color:white;
+ padding:13px 20px;
+ font-size:12px;
+ opacity:0;
+ pointer-events:none;
+ transition:.25s;
+ z-index:200;
 }
 
-.editorial{
-grid-template-columns:1fr;
+.toast.show{
+ opacity:1;
+ transform:translate(-50%,0);
 }
 
-.editorial-image{
-min-height:500px;
+/* FLOATING WHATSAPP */
+
+.whatsapp{
+ position:fixed;
+ right:20px;
+ bottom:20px;
+ z-index:40;
+ width:54px;
+ height:54px;
+ border-radius:50%;
+ background:#25D366;
+ color:white;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ font-size:24px;
+ box-shadow:0 5px 20px rgba(0,0,0,.2);
 }
 
-.footer-grid{
-grid-template-columns:1fr 1fr;
-}
+/* RESPONSIVE */
 
+@media(max-width:950px){
+ .navlinks{display:none}
+ .categories,.products{grid-template-columns:repeat(2,1fr)}
+ .editorial{grid-template-columns:1fr}
+ .editorialcontent{padding:55px 28px}
+ .benefits{grid-template-columns:repeat(2,1fr)}
+ .benefit:nth-child(2){border-right:0}
+ .benefit:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .footergrid{grid-template-columns:repeat(2,1fr)}
 }
 
 @media(max-width:600px){
-
-header{
-height:70px;
-padding:0 5%;
-}
-
-.logo{
-font-size:18px;
-letter-spacing:4px;
-}
-
-.hero{
-height:650px;
-min-height:0;
-}
-
-.hero h1{
-font-size:55px;
-}
-
-.section{
-padding:70px 5%;
-}
-
-.section-head{
-display:block;
-}
-
-.section-head h2{
-font-size:39px;
-margin-bottom:12px;
-}
-
-.categories,.products{
-grid-template-columns:1fr 1fr;
-gap:10px;
-}
-
-.category{
-height:270px;
-}
-
-.category-info{
-left:15px;
-bottom:15px;
-}
-
-.category-info h3{
-font-size:23px;
-}
-
-.product-image{
-height:230px;
-}
-
-.editorial-content{
-padding:70px 8%;
-}
-
-.editorial-content h2{
-font-size:45px;
-}
-
-.custom{
-padding:80px 7%;
-}
-
-.newsletter h2{
-font-size:40px;
-}
-
-.footer-grid{
-grid-template-columns:1fr;
-}
-
+ .nav{height:68px}
+ .logo{font-size:24px}
+ .hero{min-height:610px}
+ .hero h1{font-size:54px}
+ .section{padding:65px 0}
+ .sectionhead{display:block}
+ .filters{margin-top:20px}
+ .categories,.products{gap:10px}
+ .categorytext{left:13px;bottom:14px}
+ .categorytext strong{font-size:21px}
+ .benefits{grid-template-columns:1fr}
+ .benefit{border-right:0!important;border-bottom:1px solid var(--line)}
+ .benefit:last-child{border-bottom:0}
+ .newsletter{grid-template-columns:1fr}
+ .footergrid{grid-template-columns:1fr}
+ .editorialcontent h2{font-size:43px}
 }
 </style>
 </head>
 
 <body>
 
+<div class="topbar">
+FREE DELIVERY IN DOHA ON ORDERS OVER QAR 1,500
+</div>
+
 <header>
+<div class="container nav">
 
-<a class="logo" href="#">YOU DECIDE</a>
+<a href="#" class="logo">
+YOU DECIDE
+<small>Furniture & Interiors</small>
+</a>
 
-<nav>
+<nav class="navlinks">
 <a href="#shop">Shop</a>
 <a href="#collections">Collections</a>
 <a href="#custom">Custom Made</a>
 <a href="#about">About</a>
-<a href="#contact">Contact</a>
 </nav>
 
-<div class="header-right">
-<button class="cart" onclick="openCart()">
-CART (<span id="count">0</span>)
+<div class="navright">
+<button class="navbtn" onclick="document.getElementById('shop').scrollIntoView()">
+⌕
+</button>
+
+<button class="navbtn" onclick="openCart()">
+Bag <span class="cartnumber" id="cartCount">0</span>
 </button>
 </div>
 
+</div>
 </header>
 
+<main>
+
+<!-- HERO -->
 
 <section class="hero">
+<div class="container hero-content">
 
-<div class="hero-content">
+<div class="eyebrow">NEW COLLECTION · 2026</div>
 
-<div class="small">Furniture · Interiors · Objects</div>
-
-<h1>Designed for<br>your way of living.</h1>
+<h1>
+Pieces that make a space feel like yours.
+</h1>
 
 <p>
-Contemporary furniture and distinctive objects
-for spaces with personality.
+Contemporary furniture and considered objects for homes with character.
+Discover ready-to-order pieces or create something made especially for you.
 </p>
 
-<a class="btn" href="#shop">Discover the collection</a>
+<a href="#shop" class="btn white">
+SHOP THE COLLECTION
+</a>
 
 </div>
-
 </section>
 
 
-<section class="intro">
-
-<div class="small">YOU DECIDE</div>
-
-<h2>
-Your home should look like you.
-</h2>
-
-<p>
-We believe great interiors begin with personal choices.
-Discover carefully selected furniture, timeless materials
-and pieces made to become part of your story.
-</p>
-
-</section>
-
+<!-- COLLECTIONS -->
 
 <section class="section" id="collections">
 
-<div class="section-head">
+<div class="container">
+
+<div class="sectionhead">
 
 <div>
-<div class="small">Explore</div>
-<h2>Collections</h2>
+<div class="eyebrow">EXPLORE</div>
+<h2>Shop by category</h2>
 </div>
 
-<p>Find the pieces that belong in your space.</p>
-
+<div class="sectionintro">
+A curated selection of furniture and décor designed to work beautifully together.
 </div>
 
+</div>
 
 <div class="categories">
 
-<a href="#shop" class="category">
-<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=85">
-<div class="category-info">
-<h3>Sofas</h3>
-<span>Comfort & form</span>
+<a class="category" href="#shop" onclick="filterProducts('Sofas')">
+<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=85">
+<div class="categorytext">
+<strong>Sofas</strong>
+<span>Comfort, refined</span>
 </div>
 </a>
 
-<a href="#shop" class="category">
-<img src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=1000&q=85">
-<div class="category-info">
-<h3>Seating</h3>
-<span>Chairs & lounge</span>
+<a class="category" href="#shop" onclick="filterProducts('Seating')">
+<img src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=900&q=85">
+<div class="categorytext">
+<strong>Seating</strong>
+<span>Designed to stay</span>
 </div>
 </a>
 
-<a href="#shop" class="category">
-<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=85">
-<div class="category-info">
-<h3>Tables</h3>
-<span>Dining & living</span>
+<a class="category" href="#shop" onclick="filterProducts('Tables')">
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85">
+<div class="categorytext">
+<strong>Tables</strong>
+<span>Form & function</span>
 </div>
 </a>
 
-<a href="#shop" class="category">
-<img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85">
-<div class="category-info">
-<h3>Decor</h3>
-<span>Objects & details</span>
+<a class="category" href="#shop" onclick="filterProducts('Decor')">
+<img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85">
+<div class="categorytext">
+<strong>Decor</strong>
+<span>The finishing touch</span>
 </div>
 </a>
 
 </div>
-
+</div>
 </section>
 
 
-<section class="section" id="shop">
+<!-- PRODUCTS -->
 
-<div class="section-head">
+<section class="section" id="shop" style="padding-top:25px">
+
+<div class="container">
+
+<div class="sectionhead">
 
 <div>
-<div class="small">New collection</div>
-<h2>Selected pieces</h2>
+<div class="eyebrow">THE EDIT</div>
+<h2>Featured pieces</h2>
 </div>
 
-<p>Timeless forms selected for contemporary homes.</p>
+<div class="filters">
+
+<button class="filter active" onclick="filterProducts('All')">All</button>
+<button class="filter" onclick="filterProducts('Sofas')">Sofas</button>
+<button class="filter" onclick="filterProducts('Seating')">Seating</button>
+<button class="filter" onclick="filterProducts('Tables')">Tables</button>
+<button class="filter" onclick="filterProducts('Decor')">Decor</button>
 
 </div>
-
+</div>
 
 <div class="products" id="products"></div>
 
+</div>
 </section>
 
 
-<section class="editorial" id="about">
+<!-- ABOUT -->
 
-<div class="editorial-image"></div>
+<section class="section" id="about">
 
-<div class="editorial-content">
+<div class="container editorial">
 
-<div>
+<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1400&q=90">
 
-<div class="small">The You Decide philosophy</div>
+<div class="editorialcontent">
 
-<h2>Make it yours.</h2>
+<div class="eyebrow">THE YOU DECIDE PHILOSOPHY</div>
 
-<p>
-Furniture shouldn't simply fill a room.
-It should create an atmosphere, express your taste
-and make you feel at home.
-</p>
+<h2>Good spaces are personal.</h2>
 
 <p>
-That's why every piece at You Decide is chosen
-with design, comfort and individuality in mind.
+We believe furniture should not simply fill a room.
+It should reflect the people who live there.
+Our edit balances clean contemporary lines with warmth,
+texture and timeless materials.
 </p>
 
-<a href="#custom" class="btn dark">Discover custom made</a>
+<a href="#custom" class="btn outline">
+DISCOVER CUSTOM MADE
+</a>
 
 </div>
-
 </div>
-
 </section>
 
+
+<!-- CUSTOM -->
 
 <section class="custom" id="custom">
 
-<div class="small">Custom Furniture</div>
+<div class="container">
 
-<h2>Have something<br>in mind?</h2>
+<div class="eyebrow">MADE FOR YOU</div>
+
+<h2>Your idea. Our craft.</h2>
 
 <p>
-Tell us what you imagine.
-Choose dimensions, materials, colours and finishes,
-and create a piece that is uniquely yours.
+Have a specific size, fabric, colour or design in mind?
+Tell us what you need and our team can help turn the idea into a finished piece.
 </p>
 
-<a class="btn" href="https://wa.me/" target="_blank">
-Start your project
+<a
+class="btn white"
+href="https://wa.me/97455227059?text=Hello%20You%20Decide%2C%20I%20would%20like%20to%20ask%20about%20a%20custom%20piece."
+target="_blank">
+START A CUSTOM REQUEST
 </a>
 
+</div>
 </section>
 
 
-<section class="newsletter">
+<!-- BENEFITS -->
 
-<div class="small">Stay inspired</div>
+<section class="section" style="padding-top:55px;padding-bottom:55px">
 
-<h2>Welcome to You Decide.</h2>
+<div class="container">
 
-<p>New pieces, interiors and special collections.</p>
+<div class="benefits">
 
-<div class="form">
+<div class="benefit">
+<strong>Made to order</strong>
+<span>Custom sizes and finishes available.</span>
+</div>
 
-<input type="email" placeholder="Your email address">
+<div class="benefit">
+<strong>Doha delivery</strong>
+<span>Local delivery arranged with care.</span>
+</div>
 
-<button onclick="subscribe()">JOIN</button>
+<div class="benefit">
+<strong>Personal service</strong>
+<span>Talk directly with our team.</span>
+</div>
+
+<div class="benefit">
+<strong>Quality first</strong>
+<span>Selected materials and considered details.</span>
+</div>
 
 </div>
 
+</div>
 </section>
 
 
-<footer id="contact">
+<!-- NEWSLETTER -->
 
-<div class="footer-grid">
+<section class="section" style="padding-top:30px">
+
+<div class="container newsletter">
 
 <div>
 
-<div class="footer-logo">YOU DECIDE</div>
+<div class="eyebrow">STAY IN THE KNOW</div>
+
+<h2>
+New pieces, ideas & inspiration.
+</h2>
+
+<p class="sectionintro">
+Join our list for new collections and special offers.
+</p>
+
+</div>
+
+<form class="emailform" onsubmit="subscribe(event)">
+
+<input
+type="email"
+required
+placeholder="Your email address">
+
+<button>
+JOIN →
+</button>
+
+</form>
+
+</div>
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<div class="footergrid">
+
+<div>
+
+<div class="footerlogo">
+You Decide
+</div>
 
 <p>
-Furniture and interiors for people
-who believe their space should be personal.
+Furniture, interiors & custom-made pieces.<br>
+Doha, Qatar.
 </p>
 
 </div>
 
 <div>
 
-<h4>SHOP</h4>
+<h4>Shop</h4>
 
-<a href="#shop">Sofas</a>
-<a href="#shop">Chairs</a>
-<a href="#shop">Tables</a>
-<a href="#shop">Decor</a>
-
-</div>
-
-<div>
-
-<h4>ABOUT</h4>
-
-<a href="#about">Our Story</a>
-<a href="#custom">Custom Made</a>
-<a href="#contact">Contact</a>
+<a href="#shop">All products</a><br>
+<a href="#collections">Collections</a><br>
+<a href="#custom">Custom made</a>
 
 </div>
 
 <div>
 
-<h4>CONTACT</h4>
+<h4>Help</h4>
 
-<a href="https://wa.me/" target="_blank">WhatsApp</a>
-<a href="mailto:hello@youdecide.com">Email</a>
+<a href="#about">About us</a><br>
+<a href="#custom">Contact</a><br>
+<a href="#">Delivery</a>
+
+</div>
+
+<div>
+
+<h4>Contact</h4>
+
+<p>
+WhatsApp orders<br>
++974 5522 7059
+</p>
 
 </div>
 
 </div>
 
-<div class="copy">
-© 2026 YOU DECIDE — All rights reserved.
+<div class="copyright">
+© 2026 You Decide. All rights reserved.
+</div>
+
 </div>
 
 </footer>
 
 
-<div class="overlay" id="overlay">
+<!-- WHATSAPP -->
 
-<div class="cart-panel">
+<a
+class="whatsapp"
+href="https://wa.me/97455227059"
+target="_blank"
+aria-label="WhatsApp">
+◉
+</a>
 
-<div class="cart-top">
 
-<h2>Your Cart</h2>
+<!-- CART -->
+
+<div
+class="overlay"
+id="cartOverlay"
+onclick="closeCartOutside(event)">
+
+<div class="cartpanel">
+
+<div class="carthead">
+
+<h3>Your bag</h3>
 
 <button class="close" onclick="closeCart()">×</button>
 
 </div>
 
-<div id="cartItems"></div>
+<div class="cartitems" id="cartItems"></div>
 
-<div class="total">
+<div class="summary">
 
-<span>Total</span>
-
-<span>$<span id="total">0</span></span>
-
+<div class="summaryrow">
+<span>Subtotal</span>
+<span id="subtotal">QAR 0</span>
 </div>
 
-<button class="order" onclick="sendOrder()">
-Continue to WhatsApp
+<div class="summaryrow">
+<span>Delivery</span>
+<span>Calculated on order</span>
+</div>
+
+<div class="summaryrow total">
+<span>Total</span>
+<span id="total">QAR 0</span>
+</div>
+
+<button
+class="btn full"
+onclick="showCheckout()">
+CONTINUE TO ORDER
+</button>
+
+<div class="checkoutbox" id="checkoutBox">
+
+<h4>Order details</h4>
+
+<input
+class="field"
+id="customerName"
+placeholder="Your name">
+
+<input
+class="field"
+id="customerPhone"
+placeholder="Phone number">
+
+<input
+class="field"
+id="customerAddress"
+placeholder="Delivery address">
+
+<textarea
+class="field"
+id="customerNotes"
+placeholder="Notes or special requests"></textarea>
+
+<button
+class="btn full"
+onclick="sendWhatsAppOrder()">
+SEND ORDER VIA WHATSAPP
 </button>
 
 </div>
 
 </div>
 
+</div>
+</div>
+
+
+<div class="toast" id="toast">
+Added to your bag
+</div>
+
 
 <script>
 
-const products=[
+const WHATSAPP = "97455227059";
+
+const products = [
 
 {
 id:1,
 name:"Cloud Sofa",
-cat:"Sofas",
-price:1250,
-image:"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=85",
-tag:"BEST SELLER"
+category:"Sofas",
+price:4550,
+tag:"BEST SELLER",
+description:"Soft contemporary sofa",
+image:"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=88"
 },
 
 {
 id:2,
 name:"Luna Lounge Chair",
-cat:"Seating",
-price:420,
-image:"https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=900&q=85",
-tag:"NEW"
+category:"Seating",
+price:1530,
+tag:"NEW",
+description:"Sculptural lounge chair",
+image:"https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=1000&q=88"
 },
 
 {
 id:3,
 name:"Forma Coffee Table",
-cat:"Tables",
-price:680,
-image:"https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=85",
-tag:""
+category:"Tables",
+price:2475,
+tag:"",
+description:"Contemporary coffee table",
+image:"https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=88"
 },
 
 {
 id:4,
 name:"Linea Dining Chair",
-cat:"Seating",
-price:240,
-image:"https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=900&q=85",
-tag:""
+category:"Seating",
+price:875,
+tag:"",
+description:"Clean-lined dining chair",
+image:"https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1000&q=88"
 },
 
 {
 id:5,
 name:"Oak Dining Table",
-cat:"Tables",
-price:980,
-image:"https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85",
-tag:""
+category:"Tables",
+price:3565,
+tag:"NEW",
+description:"Warm natural dining table",
+image:"https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&w=1000&q=88"
 },
 
 {
 id:6,
 name:"Soft Curve Sofa",
-cat:"Sofas",
-price:1480,
-image:"https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=900&q=85",
-tag:"NEW"
+category:"Sofas",
+price:5400,
+tag:"",
+description:"Generous curved silhouette",
+image:"https://images.unsplash.com/photo-1493663284031-b7e3aefcae8?auto=format&fit=crop&w=1000&q=88"
 },
 
 {
 id:7,
 name:"Stone Object",
-cat:"Decor",
-price:85,
-image:"https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85",
-tag:""
+category:"Decor",
+price:310,
+tag:"",
+description:"Decorative sculptural object",
+image:"https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=88"
 },
 
 {
 id:8,
 name:"Ceramic Form",
-cat:"Decor",
-price:110,
-image:"https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=900&q=85",
-tag:""
+category:"Decor",
+price:400,
+tag:"",
+description:"Hand-finished ceramic form",
+image:"https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1000&q=88"
 }
 
 ];
 
-let cart=[];
+let cart =
+JSON.parse(localStorage.getItem("youDecideCart") || "[]");
+
+let currentFilter = "All";
 
 
-function render(){
+function money(value){
 
-document.getElementById("products").innerHTML=
+return "QAR " +
+value.toLocaleString("en-US");
 
-products.map(p=>`
+}
+
+
+function renderProducts(filter="All"){
+
+currentFilter=filter;
+
+document
+.querySelectorAll(".filter")
+.forEach(button=>{
+
+button.classList.toggle(
+"active",
+button.textContent.trim()===filter
+);
+
+});
+
+
+const list =
+filter==="All"
+? products
+: products.filter(p=>p.category===filter);
+
+
+document.getElementById("products").innerHTML =
+list.map(p=>`
 
 <article class="product">
 
 <div class="product-image">
 
-${p.tag?`<span class="tag">${p.tag}</span>`:""}
+<img
+src="${p.image}"
+alt="${p.name}"
+loading="lazy">
 
-<img src="${p.image}" alt="${p.name}" loading="lazy">
+${p.tag
+? `<span class="badge">${p.tag}</span>`
+: ""}
 
 </div>
 
@@ -1143,17 +1330,19 @@ ${p.tag?`<span class="tag">${p.tag}</span>`:""}
 
 <h3>${p.name}</h3>
 
-<div class="cat">${p.cat}</div>
-
-<div class="product-bottom">
-
-<div class="price">$${p.price}</div>
-
-<button class="add" onclick="add(${p.id})">
-ADD TO CART
-</button>
-
+<div class="product-desc">
+${p.category} · ${p.description}
 </div>
+
+<div class="price">
+${money(p.price)}
+</div>
+
+<button
+class="add"
+onclick="addToCart(${p.id})">
+ADD TO BAG
+</button>
 
 </div>
 
@@ -1164,76 +1353,136 @@ ADD TO CART
 }
 
 
-function add(id){
+function filterProducts(category){
 
-const item=cart.find(x=>x.id===id);
+renderProducts(category);
+
+setTimeout(()=>{
+document
+.getElementById("shop")
+.scrollIntoView({behavior:"smooth"});
+},50);
+
+}
+
+
+function addToCart(id){
+
+const item =
+cart.find(x=>x.id===id);
 
 if(item){
-item.qty++;
+
+item.quantity++;
+
 }else{
-cart.push({id:id,qty:1});
+
+cart.push({
+id:id,
+quantity:1
+});
+
 }
 
-update();
+saveCart();
 
-openCart();
-
-}
-
-
-function update(){
-
-document.getElementById("count").textContent=
-cart.reduce((a,x)=>a+x.qty,0);
-
-drawCart();
+showToast("Added to your bag");
 
 }
 
 
-function drawCart(){
+function saveCart(){
 
-const box=document.getElementById("cartItems");
+localStorage.setItem(
+"youDecideCart",
+JSON.stringify(cart)
+);
 
-if(!cart.length){
-
-box.innerHTML='<div class="empty">Your cart is empty.</div>';
-
-document.getElementById("total").textContent="0";
-
-return;
+renderCart();
 
 }
 
-let total=0;
 
-box.innerHTML=cart.map(item=>{
+function renderCart(){
 
-const p=products.find(x=>x.id===item.id);
+const count =
+cart.reduce(
+(sum,item)=>sum+item.quantity,
+0
+);
 
-total+=p.price*item.qty;
+document.getElementById("cartCount").textContent=count;
+
+
+const box =
+document.getElementById("cartItems");
+
+
+if(cart.length===0){
+
+box.innerHTML=`
+
+<div class="empty">
+
+Your bag is empty.
+
+<br><br>
+
+<button
+class="btn outline"
+onclick="closeCart()">
+CONTINUE SHOPPING
+</button>
+
+</div>
+
+`;
+
+}else{
+
+box.innerHTML =
+cart.map(item=>{
+
+const product =
+products.find(p=>p.id===item.id);
 
 return `
 
-<div class="cart-item">
+<div class="cartitem">
+
+<img src="${product.image}">
 
 <div>
 
-<div class="cart-name">${p.name}</div>
+<h4>${product.name}</h4>
 
-<div class="cart-price">$${p.price} × ${item.qty}</div>
-
-</div>
+<p>
+${money(product.price)}
+</p>
 
 <div class="qty">
 
-<button onclick="change(${p.id},-1)">−</button>
+<button
+onclick="changeQuantity(${product.id},-1)">
+−
+</button>
 
-<span>${item.qty}</span>
+<span>${item.quantity}</span>
 
-<button onclick="change(${p.id},1)">+</button>
+<button
+onclick="changeQuantity(${product.id},1)">
++
+</button>
 
 </div>
+
+</div>
+
+<button
+class="remove"
+onclick="removeFromCart(${product.id})">
+REMOVE
+</button>
 
 </div>
 
@@ -1241,304 +1490,244 @@ return `
 
 }).join("");
 
-document.getElementById("total").textContent=total;
+}
+
+
+const total =
+cart.reduce(
+(sum,item)=>{
+
+const product =
+products.find(p=>p.id===item.id);
+
+return sum +
+product.price*item.quantity;
+
+},0);
+
+
+document.getElementById("subtotal")
+.textContent=money(total);
+
+document.getElementById("total")
+.textContent=money(total);
 
 }
 
 
-function change(id,n){
+function changeQuantity(id,amount){
 
-const item=cart.find(x=>x.id===id);
+const item =
+cart.find(x=>x.id===id);
 
 if(!item)return;
 
-item.qty+=n;
+item.quantity += amount;
 
-if(item.qty<=0){
+if(item.quantity<=0){
 
-cart=cart.filter(x=>x.id!==id);
+cart =
+cart.filter(x=>x.id!==id);
 
 }
 
-update();
+saveCart();
+
+}
+
+
+function removeFromCart(id){
+
+cart =
+cart.filter(x=>x.id!==id);
+
+saveCart();
 
 }
 
 
 function openCart(){
 
-document.getElementById("overlay").style.display="block";
+document
+.getElementById("cartOverlay")
+.classList.add("open");
+
+renderCart();
 
 }
 
 
 function closeCart(){
 
-document.getElementById("overlay").style.display="none";
+document
+.getElementById("cartOverlay")
+.classList.remove("open");
 
 }
 
 
-function sendOrder(){
+function closeCartOutside(event){
 
-if(!cart.length){
+if(event.target.id==="cartOverlay"){
 
-alert("Your cart is empty.");
+closeCart();
+
+}
+
+}
+
+
+function showCheckout(){
+
+if(cart.length===0){
+
+showToast("Your bag is empty");
 
 return;
 
 }
 
-let message="Hello You Decide! I would like to order:%0A%0A";
+document
+.getElementById("checkoutBox")
+.classList.add("show");
+
+}
+
+
+function sendWhatsAppOrder(){
+
+const name =
+document.getElementById("customerName").value.trim();
+
+const phone =
+document.getElementById("customerPhone").value.trim();
+
+const address =
+document.getElementById("customerAddress").value.trim();
+
+const notes =
+document.getElementById("customerNotes").value.trim();
+
+
+if(!name || !phone || !address){
+
+showToast("Please complete your details");
+
+return;
+
+}
+
+
+let message =
+"Hello You Decide,%0A%0A";
+
+message +=
+"I would like to place an order:%0A%0A";
+
 
 cart.forEach(item=>{
 
-const p=products.find(x=>x.id===item.id);
+const product =
+products.find(p=>p.id===item.id);
 
-message+=p.name+" × "+item.qty+" — $"+(p.price*item.qty)+"%0A";
+message +=
+"• "+product.name+
+" x "+item.quantity+
+" — "+money(product.price*item.quantity)+
+"%0A";
 
 });
 
-const total=cart.reduce((sum,item)=>{
 
-const p=products.find(x=>x.id===item.id);
+const total =
+cart.reduce(
+(sum,item)=>{
 
-return sum+p.price*item.qty;
+const product =
+products.find(p=>p.id===item.id);
+
+return sum+
+product.price*item.quantity;
 
 },0);
 
-message+="%0ATotal: $"+total;
 
-window.open("https://wa.me/?text="+message,"_blank");
+message +=
+"%0ATotal: "+
+money(total)+
+"%0A%0A";
+
+
+message +=
+"Customer name: "+
+encodeURIComponent(name)+
+"%0A";
+
+message +=
+"Phone: "+
+encodeURIComponent(phone)+
+"%0A";
+
+message +=
+"Delivery address: "+
+encodeURIComponent(address)+
+"%0A";
+
+
+if(notes){
+
+message +=
+"Notes: "+
+encodeURIComponent(notes)+
+"%0A";
 
 }
 
 
-function subscribe(){
-
-alert("Thank you for joining You Decide.");
+window.open(
+"https://wa.me/"+
+WHATSAPP+
+"?text="+message,
+"_blank"
+);
 
 }
 
 
-render();
+function showToast(text){
 
-update();
+const toast =
+document.getElementById("toast");
+
+toast.textContent=text;
+
+toast.classList.add("show");
+
+setTimeout(()=>{
+toast.classList.remove("show");
+},1800);
+
+}
+
+
+function subscribe(event){
+
+event.preventDefault();
+
+showToast(
+"Thank you — you're on the list."
+);
+
+event.target.reset();
+
+}
+
+
+renderProducts();
+
+renderCart();
 
 </script>
 
 </body>
-</html> html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>YOU DECIDE — Furniture & Interiors</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-
-:root{
---black:#171614;
---cream:#f3eee7;
---beige:#d8cbbd;
---white:#fff;
---gray:#77716a;
---line:#e5dfd7;
-}
-
-body{
-font-family:'DM Sans',Arial,sans-serif;
-color:var(--black);
-background:#faf9f7;
-}
-
-a{text-decoration:none;color:inherit}
-button{font-family:inherit;cursor:pointer}
-
-header{
-height:82px;
-background:#fff;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:0 5%;
-position:sticky;
-top:0;
-z-index:100;
-border-bottom:1px solid var(--line);
-}
-
-.logo{
-font-size:23px;
-font-weight:600;
-letter-spacing:6px;
-}
-
-nav{
-display:flex;
-gap:35px;
-font-size:13px;
-}
-
-nav a:hover{opacity:.5}
-
-.header-right{
-display:flex;
-align-items:center;
-gap:20px;
-}
-
-.cart{
-border:0;
-background:var(--black);
-color:white;
-padding:12px 20px;
-border-radius:2px;
-font-size:12px;
-}
-
-.hero{
-height:calc(100vh - 82px);
-min-height:620px;
-position:relative;
-display:flex;
-align-items:center;
-overflow:hidden;
-background:
-linear-gradient(90deg,rgba(0,0,0,.57),rgba(0,0,0,.12)),
-url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=90");
-background-size:cover;
-background-position:center;
-color:#fff;
-}
-
-.hero-content{
-width:90%;
-max-width:1250px;
-margin:auto;
-}
-
-.small{
-font-size:11px;
-letter-spacing:4px;
-text-transform:uppercase;
-margin-bottom:25px;
-}
-
-.hero h1{
-font-family:'Playfair Display',serif;
-font-size:clamp(55px,8vw,105px);
-font-weight:400;
-line-height:.98;
-max-width:850px;
-}
-
-.hero p{
-font-size:17px;
-max-width:530px;
-line-height:1.7;
-margin:28px 0;
-color:#eee;
-}
-
-.btn{
-display:inline-block;
-background:#fff;
-color:#171614;
-padding:16px 29px;
-font-size:12px;
-letter-spacing:1px;
-text-transform:uppercase;
-border:0;
-}
-
-.btn.dark{
-background:var(--black);
-color:white;
-}
-
-.intro{
-padding:110px 7%;
-text-align:center;
-background:#fff;
-}
-
-.intro .small{color:#8b8279}
-
-.intro h2{
-font-family:'Playfair Display',serif;
-font-weight:400;
-font-size:clamp(38px,5vw,65px);
-max-width:900px;
-margin:0 auto 25px;
-}
-
-.intro p{
-max-width:650px;
-margin:auto;
-color:var(--gray);
-line-height:1.8;
-}
-
-.section{
-padding:100px 6%;
-}
-
-.section-head{
-display:flex;
-justify-content:space-between;
-align-items:end;
-margin-bottom:40px;
-}
-
-.section-head h2{
-font-family:'Playfair Display',serif;
-font-size:48px;
-font-weight:400;
-}
-
-.section-head p{
-color:var(--gray);
-font-size:13px;
-max-width:300px;
-}
-
-.categories{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:14px;
-}
-
-.category{
-height:470px;
-position:relative;
-overflow:hidden;
-background:#ddd;
-}
-
-.category img{
-width:100%;
-height:100%;
-object-fit:cover;
-transition:transform .7s;
-}
-
-.category:hover img{transform:scale(1.05)}
-
-.category:after{
-content:"";
-position:absolute;
-inset:0;
-background:linear-gradient(transparent 45%,rgba(0,0,0,.65));
-}
-
-.category-info{
-position:absolute;
-z-index:2;
-bottom:28px;
-left:28
+</html>

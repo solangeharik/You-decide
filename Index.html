@@ -2,1169 +2,213 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>YOU DECIDE — Furniture & Interiors</title>
 
-<title>YOU DECIDE — Furniture & Living</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
-
-*{margin:0;padding:0;box-sizing:border-box}
+*{box-sizing:border-box;margin:0;padding:0}
 
 :root{
- --black:#171717;
- --cream:#f5f1ea;
- --beige:#ddd2c3;
- --light:#faf9f6;
- --gray:#777;
- --white:#fff;
+--black:#171614;
+--cream:#f3eee7;
+--beige:#d8cbbd;
+--white:#fff;
+--gray:#77716a;
+--line:#e5dfd7;
 }
 
 body{
- font-family:'DM Sans',Arial,sans-serif;
- color:var(--black);
- background:var(--light);
- line-height:1.5;
+font-family:'DM Sans',Arial,sans-serif;
+color:var(--black);
+background:#faf9f7;
 }
 
 a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer}
 
-button{
- font-family:inherit;
- cursor:pointer;
-}
-
-.header{
- height:78px;
- background:#fff;
- display:flex;
- align-items:center;
- justify-content:space-between;
- padding:0 5%;
- position:sticky;
- top:0;
- z-index:100;
- border-bottom:1px solid #eee;
+header{
+height:82px;
+background:#fff;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 5%;
+position:sticky;
+top:0;
+z-index:100;
+border-bottom:1px solid var(--line);
 }
 
 .logo{
- font-size:25px;
- letter-spacing:5px;
- font-weight:700;
+font-size:23px;
+font-weight:600;
+letter-spacing:6px;
 }
 
-.nav{
- display:flex;
- gap:35px;
- font-size:14px;
+nav{
+display:flex;
+gap:35px;
+font-size:13px;
 }
 
-.nav a:hover{opacity:.55}
+nav a:hover{opacity:.5}
 
-.header-actions{
- display:flex;
- align-items:center;
- gap:12px;
+.header-right{
+display:flex;
+align-items:center;
+gap:20px;
 }
 
-.search-btn,.cart-btn{
- background:none;
- border:0;
- font-size:14px;
-}
-
-.cart-btn{
- background:var(--black);
- color:#fff;
- padding:11px 17px;
- border-radius:30px;
+.cart{
+border:0;
+background:var(--black);
+color:white;
+padding:12px 20px;
+border-radius:2px;
+font-size:12px;
 }
 
 .hero{
- min-height:650px;
- display:flex;
- align-items:center;
- padding:80px 7%;
- background:
- linear-gradient(90deg,rgba(245,241,234,.97) 0%,rgba(245,241,234,.82) 43%,rgba(245,241,234,.15) 100%),
- linear-gradient(135deg,#c9bba9,#f3eee6);
+height:calc(100vh - 82px);
+min-height:620px;
+position:relative;
+display:flex;
+align-items:center;
+overflow:hidden;
+background:
+linear-gradient(90deg,rgba(0,0,0,.57),rgba(0,0,0,.12)),
+url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=90");
+background-size:cover;
+background-position:center;
+color:#fff;
 }
 
 .hero-content{
- max-width:650px;
+width:90%;
+max-width:1250px;
+margin:auto;
 }
 
-.eyebrow{
- font-size:12px;
- letter-spacing:3px;
- text-transform:uppercase;
- margin-bottom:22px;
- color:#555;
+.small{
+font-size:11px;
+letter-spacing:4px;
+text-transform:uppercase;
+margin-bottom:25px;
 }
 
 .hero h1{
- font-family:'Playfair Display',serif;
- font-size:clamp(48px,7vw,86px);
- line-height:1.02;
- font-weight:500;
- margin-bottom:25px;
+font-family:'Playfair Display',serif;
+font-size:clamp(55px,8vw,105px);
+font-weight:400;
+line-height:.98;
+max-width:850px;
 }
 
 .hero p{
- max-width:520px;
- color:#555;
- font-size:17px;
- margin-bottom:32px;
+font-size:17px;
+max-width:530px;
+line-height:1.7;
+margin:28px 0;
+color:#eee;
 }
 
-.primary-btn{
- display:inline-block;
- background:var(--black);
- color:white;
- padding:15px 27px;
- border:0;
- font-size:14px;
- transition:.2s;
+.btn{
+display:inline-block;
+background:#fff;
+color:#171614;
+padding:16px 29px;
+font-size:12px;
+letter-spacing:1px;
+text-transform:uppercase;
+border:0;
 }
 
-.primary-btn:hover{
- transform:translateY(-2px);
+.btn.dark{
+background:var(--black);
+color:white;
+}
+
+.intro{
+padding:110px 7%;
+text-align:center;
+background:#fff;
+}
+
+.intro .small{color:#8b8279}
+
+.intro h2{
+font-family:'Playfair Display',serif;
+font-weight:400;
+font-size:clamp(38px,5vw,65px);
+max-width:900px;
+margin:0 auto 25px;
+}
+
+.intro p{
+max-width:650px;
+margin:auto;
+color:var(--gray);
+line-height:1.8;
 }
 
 .section{
- padding:90px 6%;
+padding:100px 6%;
 }
 
-.section-header{
- display:flex;
- align-items:end;
- justify-content:space-between;
- margin-bottom:35px;
+.section-head{
+display:flex;
+justify-content:space-between;
+align-items:end;
+margin-bottom:40px;
 }
 
-.section-title{
- font-family:'Playfair Display',serif;
- font-size:43px;
- font-weight:500;
+.section-head h2{
+font-family:'Playfair Display',serif;
+font-size:48px;
+font-weight:400;
 }
 
-.section-subtitle{
- color:var(--gray);
- font-size:14px;
- max-width:350px;
+.section-head p{
+color:var(--gray);
+font-size:13px;
+max-width:300px;
 }
 
 .categories{
- display:grid;
- grid-template-columns:repeat(4,1fr);
- gap:18px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:14px;
 }
 
 .category{
- min-height:330px;
- background:#e5ded4;
- display:flex;
- align-items:end;
- padding:25px;
- position:relative;
- overflow:hidden;
+height:470px;
+position:relative;
+overflow:hidden;
+background:#ddd;
 }
 
-.category:nth-child(2){background:#d8d1c7}
-.category:nth-child(3){background:#cbc0b2}
-.category:nth-child(4){background:#e9e4dc}
-
-.category:before{
- content:"";
- position:absolute;
- width:180px;
- height:180px;
- border-radius:50%;
- background:#ffffff35;
- top:35px;
- right:25px;
-}
-
-.category-content{
- position:relative;
- z-index:2;
-}
-
-.category h3{
- font-family:'Playfair Display',serif;
- font-size:30px;
- font-weight:500;
-}
-
-.category span{
- display:block;
- margin-top:5px;
- font-size:13px;
- color:#555;
-}
-
-.products{
- display:grid;
- grid-template-columns:repeat(4,1fr);
- gap:22px;
-}
-
-.product{
- background:#fff;
- position:relative;
-}
-
-.product-image{
- height:330px;
- display:flex;
- align-items:center;
- justify-content:center;
- font-size:105px;
- background:#eee9e1;
- position:relative;
- overflow:hidden;
-}
-
-.product:nth-child(2) .product-image{background:#e1ddd6}
-.product:nth-child(3) .product-image{background:#ddd6cc}
-.product:nth-child(4) .product-image{background:#e9e3da}
-.product:nth-child(5) .product-image{background:#dcd5ca}
-.product:nth-child(6) .product-image{background:#e6e1d9}
-.product:nth-child(7) .product-image{background:#d9d2c8}
-.product:nth-child(8) .product-image{background:#ebe7df}
-
-.product-image:after{
- content:"";
- position:absolute;
- width:140px;
- height:40px;
- background:#0002;
- filter:blur(18px);
- bottom:35px;
- border-radius:50%;
-}
-
-.product-info{
- padding:18px 5px 22px;
-}
-
-.product-name{
- font-size:16px;
- font-weight:600;
-}
-
-.product-category{
- color:#888;
- font-size:12px;
- margin-top:3px;
-}
-
-.product-bottom{
- display:flex;
- justify-content:space-between;
- align-items:center;
- margin-top:13px;
-}
-
-.price{
- font-weight:600;
-}
-
-.add{
- border:1px solid #ddd;
- background:#fff;
- padding:9px 13px;
- font-size:12px;
-}
-
-.add:hover{
- background:#171717;
- color:#fff;
-}
-
-.badge{
- position:absolute;
- top:14px;
- left:14px;
- background:#171717;
- color:#fff;
- padding:6px 10px;
- font-size:10px;
- letter-spacing:1px;
- z-index:3;
-}
-
-.custom{
- background:#1b1b1b;
- color:#fff;
- padding:95px 8%;
- display:grid;
- grid-template-columns:1fr 1fr;
- gap:80px;
- align-items:center;
-}
-
-.custom h2{
- font-family:'Playfair Display',serif;
- font-size:60px;
- font-weight:500;
- line-height:1.05;
-}
-
-.custom p{
- color:#ccc;
- font-size:16px;
- line-height:1.8;
- margin-bottom:28px;
-}
-
-.light-btn{
- background:#fff;
- color:#171717;
- padding:14px 25px;
- border:0;
-}
-
-.story{
- display:grid;
- grid-template-columns:1fr 1fr;
- gap:70px;
- align-items:center;
-}
-
-.story-visual{
- min-height:450px;
- background:linear-gradient(135deg,#d5cabd,#eee9e0);
- display:flex;
- align-items:center;
- justify-content:center;
- font-size:120px;
-}
-
-.story h2{
- font-family:'Playfair Display',serif;
- font-size:52px;
- font-weight:500;
- line-height:1.1;
- margin-bottom:20px;
-}
-
-.story p{
- color:#666;
- line-height:1.9;
- margin-bottom:20px;
-}
-
-.newsletter{
- text-align:center;
- background:#e9e2d8;
- padding:80px 20px;
-}
-
-.newsletter h2{
- font-family:'Playfair Display',serif;
- font-size:43px;
- font-weight:500;
- margin-bottom:12px;
-}
-
-.newsletter p{
- color:#666;
- margin-bottom:25px;
-}
-
-.newsletter-form{
- display:flex;
- max-width:500px;
- margin:auto;
-}
-
-.newsletter-form input{
- flex:1;
- padding:15px;
- border:1px solid #ccc;
- border-right:0;
- outline:none;
-}
-
-.newsletter-form button{
- padding:15px 22px;
- background:#171717;
- color:#fff;
- border:0;
-}
-
-footer{
- background:#111;
- color:#fff;
- padding:55px 6% 25px;
-}
-
-.footer-top{
- display:grid;
- grid-template-columns:2fr 1fr 1fr 1fr;
- gap:40px;
- padding-bottom:45px;
-}
-
-.footer-logo{
- font-size:24px;
- letter-spacing:4px;
- font-weight:bold;
- margin-bottom:15px;
-}
-
-footer p{
- color:#999;
- font-size:13px;
- max-width:300px;
- line-height:1.8;
-}
-
-footer h4{
- margin-bottom:15px;
- font-size:13px;
-}
-
-footer a{
- display:block;
- color:#999;
- font-size:13px;
- margin:9px 0;
-}
-
-.copyright{
- border-top:1px solid #333;
- padding-top:20px;
- color:#777;
- font-size:11px;
-}
-
-/* CART */
-
-.cart-overlay{
- display:none;
- position:fixed;
- inset:0;
- background:#0008;
- z-index:200;
-}
-
-.cart-panel{
- position:absolute;
- right:0;
- top:0;
- height:100%;
- width:min(450px,100%);
- background:#fff;
- padding:28px;
- overflow:auto;
-}
-
-.cart-header{
- display:flex;
- justify-content:space-between;
- align-items:center;
- border-bottom:1px solid #ddd;
- padding-bottom:18px;
- margin-bottom:20px;
-}
-
-.cart-header h2{
- font-family:'Playfair Display',serif;
- font-size:32px;
- font-weight:500;
-}
-
-.close{
- border:0;
- background:none;
- font-size:28px;
-}
-
-.cart-item{
- display:flex;
- justify-content:space-between;
- gap:15px;
- padding:16px 0;
- border-bottom:1px solid #eee;
-}
-
-.cart-item-name{
- font-weight:600;
- font-size:14px;
-}
-
-.cart-item-price{
- font-size:13px;
- color:#777;
- margin-top:4px;
-}
-
-.quantity{
- display:flex;
- align-items:center;
- gap:8px;
-}
-
-.quantity button{
- width:27px;
- height:27px;
- border:1px solid #ddd;
- background:#fff;
-}
-
-.cart-total{
- display:flex;
- justify-content:space-between;
- font-size:20px;
- font-weight:600;
- padding:25px 0;
-}
-
-.whatsapp{
- display:block;
- width:100%;
- background:#171717;
- color:#fff;
- text-align:center;
- padding:16px;
- border:0;
-}
-
-.empty{
- text-align:center;
- color:#888;
- padding:50px 0;
-}
-
-.mobile-menu{
- display:none;
- border:0;
- background:none;
- font-size:24px;
-}
-
-@media(max-width:1000px){
- .categories,.products{grid-template-columns:repeat(2,1fr)}
- .custom,.story{grid-template-columns:1fr}
- .footer-top{grid-template-columns:1fr 1fr}
- .nav{gap:15px}
-}
-
-@media(max-width:650px){
- .header{height:68px}
- .nav{display:none}
- .mobile-menu{display:block}
- .search-btn{display:none}
- .logo{font-size:20px}
- .hero{min-height:570px;padding:65px 7%}
- .hero h1{font-size:48px}
- .section{padding:65px 5%}
- .section-header{display:block}
- .section-subtitle{margin-top:10px}
- .categories,.products{grid-template-columns:1fr 1fr;gap:12px}
- .category{min-height:220px;padding:16px}
- .category h3{font-size:23px}
- .product-image{height:210px;font-size:70px}
- .custom{padding:70px 7%}
- .custom h2{font-size:46px}
- .story h2{font-size:42px}
- .story-visual{min-height:300px}
- .footer-top{grid-template-columns:1fr}
-}
-</style>
-</head>
-
-<body>
-
-<header class="header">
-
-<a href="#" class="logo">YOU DECIDE</a>
-
-<nav class="nav">
-<a href="#shop">Shop</a>
-<a href="#categories">Collections</a>
-<a href="#custom">Custom Made</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<div class="header-actions">
-<button class="search-btn">Search</button>
-
-<button class="cart-btn" onclick="openCart()">
-Cart (<span id="cartCount">0</span>)
-</button>
-
-<button class="mobile-menu">☰</button>
-</div>
-
-</header>
-
-
-<section class="hero">
-
-<div class="hero-content">
-
-<div class="eyebrow">Furniture • Objects • Living</div>
-
-<h1>Your space.<br>Your choice.</h1>
-
-<p>
-Thoughtful furniture and distinctive home pieces,
-made for people who want their space to feel truly theirs.
-</p>
-
-<a href="#shop" class="primary-btn">Explore Collection</a>
-
-</div>
-
-</section>
-
-
-<section class="section" id="categories">
-
-<div class="section-header">
-
-<div>
-<div class="eyebrow">Explore</div>
-<h2 class="section-title">Shop by category</h2>
-</div>
-
-<p class="section-subtitle">
-Discover pieces designed to bring character,
-comfort and personality into your home.
-</p>
-
-</div>
-
-
-<div class="categories">
-
-<a href="#shop" class="category">
-<div class="category-content">
-<h3>Seating</h3>
-<span>Chairs & Lounge</span>
-</div>
-</a>
-
-<a href="#shop" class="category">
-<div class="category-content">
-<h3>Tables</h3>
-<span>Dining & Living</span>
-</div>
-</a>
-
-<a href="#shop" class="category">
-<div class="category-content">
-<h3>Sofas</h3>
-<span>Comfort & Style</span>
-</div>
-</a>
-
-<a href="#shop" class="category">
-<div class="category-content">
-<h3>Decor</h3>
-<span>Objects & Details</span>
-</div>
-</a>
-
-</div>
-
-</section>
-
-
-<section class="section" id="shop">
-
-<div class="section-header">
-
-<div>
-<div class="eyebrow">The collection</div>
-<h2 class="section-title">Selected pieces</h2>
-</div>
-
-<a href="#shop" class="primary-btn">View All</a>
-
-</div>
-
-
-<div class="products" id="products"></div>
-
-</section>
-
-
-<section class="custom" id="custom">
-
-<div>
-
-<div class="eyebrow" style="color:#aaa">Made for you</div>
-
-<h2>Imagine it.<br>We create it.</h2>
-
-</div>
-
-<div>
-
-<p>
-Your home is unique. Your furniture can be too.
-Choose dimensions, materials, colours and finishes,
-and let us create a piece designed specifically
-for your space.
-</p>
-
-<a href="#contact" class="light-btn">Start a Custom Project</a>
-
-</div>
-
-</section>
-
-
-<section class="section" id="about">
-
-<div class="story">
-
-<div class="story-visual">
-🛋️
-</div>
-
-<div>
-
-<div class="eyebrow">Our philosophy</div>
-
-<h2>Furniture with personality.</h2>
-
-<p>
-At You Decide, we believe furniture should be more
-than something you put in a room.
-</p>
-
-<p>
-It should reflect your taste, your lifestyle and
-the way you live.
-</p>
-
-<p>
-That's why we bring together contemporary design,
-quality materials and the freedom to make it yours.
-</p>
-
-<a href="#contact" class="primary-btn">Discover You Decide</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="newsletter">
-
-<div class="eyebrow">Stay inspired</div>
-
-<h2>Ideas for your space.</h2>
-
-<p>Join us for new collections, design inspiration and special offers.</p>
-
-<div class="newsletter-form">
-
-<input type="email" placeholder="Your email address">
-
-<button onclick="subscribe()">Join</button>
-
-</div>
-
-</section>
-
-
-<footer id="contact">
-
-<div class="footer-top">
-
-<div>
-
-<div class="footer-logo">YOU DECIDE</div>
-
-<p>
-Furniture, home objects and custom pieces
-created around your way of living.
-</p>
-
-</div>
-
-<div>
-
-<h4>SHOP</h4>
-
-<a href="#shop">Chairs</a>
-<a href="#shop">Tables</a>
-<a href="#shop">Sofas</a>
-<a href="#shop">Decor</a>
-
-</div>
-
-<div>
-
-<h4>ABOUT</h4>
-
-<a href="#about">Our Story</a>
-<a href="#custom">Custom Made</a>
-<a href="#contact">Contact</a>
-
-</div>
-
-<div>
-
-<h4>CONTACT</h4>
-
-<a href="https://wa.me/" target="_blank">WhatsApp</a>
-<a href="mailto:hello@youdecide.com">Email</a>
-
-</div>
-
-</div>
-
-<div class="copyright">
-© 2026 You Decide. All rights reserved.
-</div>
-
-</footer>
-
-
-<!-- CART -->
-
-<div class="cart-overlay" id="cartOverlay">
-
-<div class="cart-panel">
-
-<div class="cart-header">
-
-<h2>Your Cart</h2>
-
-<button class="close" onclick="closeCart()">×</button>
-
-</div>
-
-<div id="cartItems"></div>
-
-<div class="cart-total">
-
-<span>Total</span>
-
-<span>$<span id="cartTotal">0</span></span>
-
-</div>
-
-<button class="whatsapp" onclick="sendOrder()">
-Order via WhatsApp
-</button>
-
-</div>
-
-</div>
-
-
-<script>
-
-const products = [
-
-{
-id:1,
-name:"Linea Chair",
-category:"Seating",
-price:240,
-icon:"🪑",
-badge:"NEW"
-},
-
-{
-id:2,
-name:"Curve Lounge Chair",
-category:"Seating",
-price:310,
-icon:"🪑",
-badge:""
-},
-
-{
-id:3,
-name:"Forma Coffee Table",
-category:"Tables",
-price:420,
-icon:"🪵",
-badge:""
-},
-
-{
-id:4,
-name:"Oak Dining Table",
-category:"Tables",
-price:780,
-icon:"🪵",
-badge:"BEST SELLER"
-},
-
-{
-id:5,
-name:"Cloud Sofa",
-category:"Sofas",
-price:1250,
-icon:"🛋️",
-badge:""
-},
-
-{
-id:6,
-name:"Luna Sofa",
-category:"Sofas",
-price:1480,
-icon:"🛋️",
-badge:"NEW"
-},
-
-{
-id:7,
-name:"Decor Object 01",
-category:"Decor",
-price:75,
-icon:"✨",
-badge:""
-},
-
-{
-id:8,
-name:"Decor Object 02",
-category:"Decor",
-price:110,
-icon:"🏺",
-badge:""
-}
-
-];
-
-let cart=[];
-
-
-function renderProducts(){
-
-const container=document.getElementById("products");
-
-container.innerHTML=products.map(p=>`
-
-<div class="product">
-
-<div class="product-image">
-
-${p.badge ? `<span class="badge">${p.badge}</span>` : ""}
-
-${p.icon}
-
-</div>
-
-<div class="product-info">
-
-<div class="product-name">${p.name}</div>
-
-<div class="product-category">${p.category}</div>
-
-<div class="product-bottom">
-
-<div class="price">$${p.price}</div>
-
-<button class="add" onclick="addToCart(${p.id})">
-ADD TO CART
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-`).join("");
-
-}
-
-
-function addToCart(id){
-
-const existing=cart.find(item=>item.id===id);
-
-if(existing){
-
-existing.qty++;
-
-}else{
-
-cart.push({
-id:id,
-qty:1
-});
-
+.category img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:transform .7s;
 }
 
-updateCart();
+.category:hover img{transform:scale(1.05)}
 
-openCart();
-
-}
-
-
-function updateCart(){
-
-document.getElementById("cartCount").textContent=
-cart.reduce((sum,item)=>sum+item.qty,0);
-
-renderCart();
-
-}
-
-
-function renderCart(){
-
-const container=document.getElementById("cartItems");
-
-if(cart.length===0){
-
-container.innerHTML=`<div class="empty">Your cart is empty.</div>`;
-
-document.getElementById("cartTotal").textContent="0";
-
-return;
-
-}
-
-let total=0;
-
-container.innerHTML=cart.map(item=>{
-
-const p=products.find(product=>product.id===item.id);
-
-const subtotal=p.price*item.qty;
-
-total+=subtotal;
-
-return `
-
-<div class="cart-item">
-
-<div>
-
-<div class="cart-item-name">${p.name}</div>
-
-<div class="cart-item-price">
-$${p.price} × ${item.qty}
-</div>
-
-</div>
-
-<div class="quantity">
-
-<button onclick="changeQty(${p.id},-1)">−</button>
-
-<span>${item.qty}</span>
-
-<button onclick="changeQty(${p.id},1)">+</button>
-
-</div>
-
-</div>
-
-`;
-
-}).join("");
-
-document.getElementById("cartTotal").textContent=total;
-
-}
-
-
-function changeQty(id,change){
-
-const item=cart.find(x=>x.id===id);
-
-if(!item)return;
-
-item.qty+=change;
-
-if(item.qty<=0){
-
-cart=cart.filter(x=>x.id!==id);
-
-}
-
-updateCart();
-
-}
-
-
-function openCart(){
-
-document.getElementById("cartOverlay").style.display="block";
-
-}
-
-
-function closeCart(){
-
-document.getElementById("cartOverlay").style.display="none";
-
-}
-
-
-function sendOrder(){
-
-if(cart.length===0){
-
-alert("Your cart is empty.");
-
-return;
-
-}
-
-let message="Hello You Decide! I would like to order:%0A%0A";
-
-cart.forEach(item=>{
-
-const p=products.find(x=>x.id===item.id);
-
-message+=
-p.name+" × "+item.qty+
-" — $"+(p.price*item.qty)+
-"%0A";
-
-});
-
-const total=cart.reduce((sum,item)=>{
-
-const p=products.find(x=>x.id===item.id);
-
-return sum+(p.price*item.qty);
-
-},0);
-
-message+="%0ATotal: $"+total;
-
-window.open(
-"https://wa.me/?text="+message,
-"_blank"
-);
-
-}
-
-
-function subscribe(){
-
-alert("Thank you! You are now on the You Decide list.");
-
+.category:after{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(transparent 45%,rgba(0,0,0,.65));
 }
-
-
-renderProducts();
-
-updateCart();
-
-</script>
 
-</body>
-</html>
+.category-info{
+position:absolute;
+z-index:2;
+bottom:28px;
+left:28
